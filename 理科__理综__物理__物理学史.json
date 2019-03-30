@@ -1,0 +1,1304 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "090ea49a-375c-11e9-973b-beec426c7dda",
+    "deck_config_uuid": "08eed501-375c-11e9-90dc-beec426c7dda",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "anotherRetreat": false,
+            "autoAgain": 0,
+            "autoAlert": 0,
+            "autoAnswer": 0,
+            "autoplay": true,
+            "crowdanki_uuid": "08eed501-375c-11e9-90dc-beec426c7dda",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "预览",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 9999,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 9999
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "_y-night.svg",
+        "_y-day.svg",
+        "_z-night.svg",
+        "_times.ttf",
+        "_switch.png",
+        "_x-night.svg",
+        "_x-day.svg",
+        "_z-day.svg",
+        "_space.png"
+    ],
+    "name": "理科::理综::物理::物理学史",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "css": "/* - http://leaflyer.lofter.com - */\n\n\n/* ----------调用字体---------- */\n\n@font-face { font-family: yh; src: url('_FZYHJW.ttf'); }\n@font-face { font-family: times; src: url('_times.ttf'); }\n\n\n/* ----------各种样式---------- */\n\nbody { background-color: #fff; color: black; }\n.card {\n\tfont: 20px/30px yh;\n\tbackground-color:#fff;\n\t#background-image: url(_bg.png);\n\t#background-size:100%;\n}\n\n\n.cloze {\n\tcolor: #ec6c4f;\n\t#font-weight: bold;\n\tborder-bottom: 1px solid #ec6c4f;\n\tpadding-bottom: 2px;\n\t-webkit-animation: cloze 0.4s 0s;\n\t-webkit-animation-fill-mode: forwards;\n}\n.h1 { font: 22px/22px yh; padding: 0.3em 0em 0.3em 0.5em; }\n.h2 { font: 20px/30px yh; padding: 0.3em 0em 0.3em 0.5em; }\n\n.xleft { border-left: 3px solid #ec6c4f; }\n.yleft { border-left: 3px solid #338eca; }\n.zleft { border-left: 3px solid #4c991b; }\n\n.xcolor { color: #ec6c4f; }\n.ycolor { color: #338eca; }\n.zcolor { color: #4c991b; }\n\n.ximg { background: url(_x-day.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n.yimg { background: url(_y-day.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n.zimg { background: url(_z-day.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n\n.btn {\n\topacity: 0.8;\n\tright: 10px;\n\tbottom: 10px;\n\theight: 70px;\n\twidth: 70px;\n\tborder: none;\n\tbackground: url(_switch.png);\n\tbackground-size: 100%;\n\tposition: fixed;\n}\n\t.btn:active { opacity: 0.9; }\n.hint { color: #333; }\n\n\n/* ---------- 其他调整 ---------- */\n\na { color: #666; }\nimg { max-width: 100%; vertical-align: middle; }\n\t.chrome img { max-width: 100%; vertical-align: middle; }\nul,ol { margin-top: 0em; }\nli { margin-left: -0.5em; }\ni { font-family: palatino; padding: 0 3px 0 0; }\nu { text-decoration: none; background-color: #ffff75; border-bottom: 2px solid #ec6c4f; }\nuu { border-bottom: 1px solid #ec6c4f; }\nhr { height: 1px; width: 100%; display: block; border: 0px solid #fff; vertical-align: middle; margin:5px 0px 10px 0px; background-color: #ccc;}\n#time { font-family: yh; float: right; } \n\n\n/* ----------夜间模式（Android）---------- */\n\nbody.night_mode { background-color: #232323; color:#727272; }\n.night_mode .card { background-color: #232323;  color:#727272; }\n.night_mode .cloze { color: #a0a0a0; border-bottom: 1px solid #a0a0a0; }\n\n.night_mode .xleft { border-left: 3px solid #a0a0a0; }\n.night_mode .yleft { border-left: 3px solid #a0a0a0; }\n.night_mode .zleft { border-left: 3px solid #a0a0a0; }\n\n.night_mode .xcolor { #font-weight: bold; color:#a0a0a0; }\n.night_mode .ycolor { #font-weight: bold; color:#a0a0a0; }\n.night_mode .zcolor { #font-weight: bold; color:#a0a0a0; }\n\n.night_mode .ximg{ background: url(_x-night.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n.night_mode .yimg{ background: url(_y-night.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n.night_mode .zimg{ background: url(_z-night.svg); background-size: 100%; background-repeat: no-repeat; background-position: center; }\n\n.night_mode .hint { color: #727272; }\n.night_mode u { color: #a0a0a0; background-color: #505050; border-bottom: 2px solid #5f5f5f; }\n.night_mode uu { border-bottom: 1px solid #5f5f5f; }\n.night_mode img { filter: alpha(opacity=30); opacity:0.3;  filter:invert;}\n.night_mode audio { filter: alpha(opacity=30); opacity:0.3; }\n.night_mode hr { background-color: #484848; }\n.night_mode .btn { opacity:0.5; right:10px; bottom:10px; position: fixed; }\n.night_mode .btn:active { opacity:0.3; }\n\n/* ----------动画效果---------- \n\n.slide { position: relative; -webkit-animation: slide 1s 0s; -webkit-animation-fill-mode: forwards; }\n\n@-webkit-keyframes slide {\n\t0%\t{ opacity: 0  ; top: 100px; }\n\t50%\t{ opacity: 0.8; top: -10px; }\n\t100%\t{ opacity: 1.0; top: -3px; }\n}\n\n@-webkit-keyframes cloze {\n\tfrom\t{ opacity: 0; }\n\tto  \t{ opacity: 1; }\n}\n*/",
+            "flds": [
+                {
+                    "font": "宋体",
+                    "media": [],
+                    "name": "知识",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "《》",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "宋体",
+                    "media": [],
+                    "name": "评论",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "举例",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "宋体",
+                    "media": [],
+                    "name": "拓展",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": true,
+            "name": "填空(Anki高考)",
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<!-- 更多模板请访问 http://leaflyer.lofter.com -->\n\n<div class=\"h1 xcolor xleft\">\n\t<span class=\"ximg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n\t\t{{^《》}}知识{{/《》}}\n\t\t{{#《》}}{{《》}}{{/《》}}\n\t\t<span id=\"time\">\n\t</span>\n</div>\n\n\t<div class=\"h2 xleft\">{{cloze:知识}}</div>\n\n{{#评论}}\n<br><div class=\"slide\">\n\t<div class=\"h1 ycolor yleft\">\n\t<span class=\"yimg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n\t\t评论\n\t</div>\n\t<div class=\"h2  yleft\">{{hint:评论}}</div></div>\n{{/评论}}\n\n{{#举例}}\n<br><div class=\"slide\">\n\t<div class=\"h1 xcolor xleft\">\n\t<span class=\"ximg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n\t\t举例\n\t</div>\n\t<div class=\"h2  xleft\">{{hint:举例}}</div></div>\n{{/举例}}\n\n{{#拓展}}\n<br><div class=\"slide\">\n\t<div class=\"h1 zcolor zleft\">\n\t<span class=\"zimg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n\t\t拓展\n\t</div>\n\t<div class=\"h2 zleft\">{{hint:拓展}}</div></div>\n{{/拓展}}\n<br>\n<br>\n<div style='font-family: Arial; font-size: 12px;float:left;color:\t#DCDCDC'>欢迎访问<a href=\"https://zhuanlan.zhihu.com/ankigaokao\">Anki高考</a>获取更多支持</div>",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "填空题",
+                    "ord": 0,
+                    "qfmt": "<!-- 更多模板请访问 http://leaflyer.lofter.com -->\n\n<div class=\"h1 xcolor xleft\">\n\t<span class=\"ximg\"><img src=\"_space.png\" height=\"24\" width=\"24\" /></span>\n\t\t{{^《》}}知识{{/《》}}\n\t\t{{#《》}}{{《》}}{{/《》}}\n</div>\n\n\t<div class=\"h2 xleft\">{{cloze:知识}}</div>\n\n<script type=\"text/javascript\">\n    [].forEach.call(document.querySelectorAll('.cloze'),\n       function(V0) {\n          V0.innerHTML = V0.innerHTML.replace(/\\[...]/g,\"　　\");\n });\n</script>"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1638年，意大利物理学家{{c1::伽利略}}在《两种新科学的对话》中用科学推理论证重物体和轻物体下落一样快；并在比萨斜塔做了两个不同质量的小球下落的实验，证明了他的观点是正确的，推翻了古希腊学者亚里士多德的观点（即：质量大的小球下落快是错误的）；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "mQhmRI=3?Z",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1687年，英国科学家{{c1::牛顿}}在《自然哲学的数学原理》著作中提出了三条运动定律（即{{c1::牛顿}}三大运动定律）。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "blA9Tv6p^V",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "17世纪，{{c1::伽利略}}通过构思的理想实验指出：在水平面上运动的物体若没有摩擦，将保持这个速度一直运动下去；得出结论：力是改变物体运动的原因，推翻了{{c2::亚里士多德}}的观点：力是维持物体运动的原因。同时代的法国物理学家{{c3::笛卡儿}}进一步指出：如果没有其它原因，运动物体将继续以同速度沿着一条直线运动，既不会停下来，也不会偏离原来的方向。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "K7xCoEMyUn",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "英国物理学家{{c1::胡克}}对物理学的贡献：{{c1::胡克}}定律；经典题目：{{c1::胡克}}认为只有在一定的条件下，弹簧的弹力才与弹簧的形变量成正比（对）",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "H!i^226h%L",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "人们根据日常的观察和经验，提出“地心说”，古希腊科学家{{c1::托勒密}}是代表；而波兰天文学家{{c2::哥白尼}}提出了“日心说”，大胆反驳地心说。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "q%L:so!oFC",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "17世纪，德国天文学家{{c1::开普勒}}提出{{c1::开普勒}}三大定律；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "y~JU8@QF`f",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::牛顿}}于1687年正式发表万有引力定律；1798年英国物理学家{{c2::卡文迪许}}利用扭秤实验装置比较准确地测出了引力常量；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cA&9T)qO>O",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1846年，英国剑桥大学学生{{c1::亚当斯}}和法国天文学家{{c2::勒维烈（勒维耶）}}应用万有引力定律，计算并观测到海王星，1930年，美国天文学家{{c3::汤苞}}用同样的计算方法发现冥王星。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Pl3Vz4R6Gm",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "我国宋朝发明的火箭是现代火箭的鼻祖，与现代火箭原理相同；但现代火箭结构复杂，其所能达到的最大速度主要取决于喷气速度和质量比（火箭开始飞行的质量与燃料燃尽时的质量比）；俄国科学家{{c1::齐奥尔科夫斯基}}被称为近代火箭之父，他首先提出了多级火箭和惯性导航的概念。多级火箭一般都是三级火箭，我国已成为掌握载人航天技术的第三个国家。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "m?Rv.c)N=X",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "20世纪初建立的量子力学和爱因斯坦提出的狭义相对论表明经典力学不适用于{{c1::微观粒子}}和{{c2::高速运动物体}}。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "JHOEtjh?4=",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "17世纪，德国天文学家{{c1::开普勒}}提出{{c1::开普勒三定律}}；牛顿于1687年正式发表万有引力定律；1798年英国物理学家{{c2::卡文迪许}}利用扭秤装置比较准确地测出了引力常量（体现放大和转换的思想）；1846年，科学家应用万有引力定律，计算并观测到海王星。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "wKg}-OAh!%",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1785年法国物理学家{{c1::库仑}}利用扭秤实验发现了电荷之间的相互作用规律——{{c1::库仑定律}}，并测出了静电力常量k的值。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "y>PWMe{{@&",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1752年，{{c1::富兰克林}}在费城通过风筝实验验证闪电是放电的一种形式，把天电与地电统一起来，并发明避雷针。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "xEFw<4(Z?(",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1837年，英国物理学家{{c1::法拉第}}最早引入了电场概念，并提出用{{c2::电场线}}表示电场。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "o(n?Qyl|!6",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1913年，美国物理学家{{c1::密立根}}通过油滴实验精确测定了{{c2::元电荷e电荷量}}，获得诺贝尔奖。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ycpG^+n6ol",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1826年{{c1::德}}国物理学家欧姆（1787-1854）通过实验得出欧姆定律。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "la]Yf@_[QT",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1911年，荷兰科学家{{c1::昂尼斯（或昂纳斯）}}发现大多数金属在温度降到某一值时，都会出现电阻突然降为零的现象——{{c2::超导}}现象。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "HH9SA{7]p;",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "19世纪，{{c1::焦耳}}和{{c1::楞次}}先后各自独立发现电流通过导体时产生热效应的规律，即{{c1::焦耳——楞次}}定律。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "NYVvg-VWd8",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1820年，丹麦物理学家{{c1::奥斯特}}发现电流可以使周围的小磁针发生偏转，称为电流磁效应。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "zWirEpuUNV",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "法国物理学家{{c1::安培}}发现两根通有同向电流的平行导线相吸，反向电流的平行导线则相斥，同时提出了{{c1::安培分子电流}}假说；并总结出{{c1::安培定则}}（右手螺旋定则）判断电流与磁场的相互关系和左手定则判断通电导线在磁场中受到磁场力的方向。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cLX]hl@oJ1",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "荷兰物理学家{{c1::洛仑兹}}提出运动电荷产生了磁场和磁场对运动电荷有作用力（{{c1::洛仑兹力}}）的观点。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "k=<4nIopbX",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "英国物理学家{{c1::汤姆生}}发现电子，并指出：阴极射线是高速运动的电子流。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "hJ-F~`(-gj",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "汤姆生的学生{{c1::阿斯顿}}设计的质谱仪可用来测量带电粒子的质量和分析同位素。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "h+c|%r)]Ip",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1932年，美国物理学家{{c1::劳伦兹}}发明了回旋加速器能在实验室中产生大量的高能粒子。（最大动能仅取决于{{c2::磁场}}和D形盒{{c3::直径}}。带电粒子圆周运动周期与高频电源的周期相同；但当粒子动能很大，速率接近光速时，根据狭义相对论，粒子质量随速率显著增大，粒子在磁场中的回旋周期发生变化，进一步提高粒子的速率很困难。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "M+N3EVw6<T",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1831年英国物理学家{{c1::法拉第}}发现了由磁场产生电流的条件和规律——{{c1::电磁感应}}定律。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "s:_w;VX]g3",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1834年，俄国物理学家{{c1::楞次}}发表确定感应电流方向的定律——{{c1::楞次定律}}。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "q~CpYh-qFu",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1835年，美国科学家{{c1::亨利}}发现自感现象（因电流变化而在电路本身引起感应电动势的现象），日光灯的工作原理即为其应用之一，{{c2::双绕线}}法制精密电阻为消除其影响应用之一。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "F,0@[;tlRn",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "17世纪，荷兰物理学家{{c1::惠更斯}}确定了单摆周期公式。周期是{{c2::2s}}的单摆叫秒摆。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "w4s|w.YAw7",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1690年，荷兰物理学家{{c1::惠更斯}}提出了机械波的波动现象规律——{{c1::惠更斯}}原理。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Fy~Pwv&fM>",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "奥地利物理学家{{c1::多普勒}}（1803-1853）首先发现由于波源和观察者之间有相对运动，使观察者感到频率发生变化的现象——{{c1::多普勒效应}}。【相互接近，f增大；相互远离，f减少】",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "n`_(LBkk`*",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1864年，英国物理学家{{c1::麦克斯韦}}发表《电磁场的动力学理论》的论文，提出了电磁场理论，预言了电磁波的存在，指出光是一种电磁波，为光的电磁理论奠定了基础。电磁波是一种横波。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "oTzHH1{7ly",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1887年，德国物理学家{{c1::赫兹}}用实验证实了电磁波的存在，并测定了电磁波的传播速度等于光速。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "gC=@?3Nn4@",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1894年，意大利{{c1::马可尼}}和俄国{{c2::波波夫}}分别发明了无线电报，揭开无线电通信的新篇章。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "yoPRVzZXHl",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1621年，荷兰数学家{{c1::斯涅耳}}找到了入射角与折射角之间的规律——折射定律。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "j1MmcFgQGD",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1801年，英国物理学家{{c1::托马斯·杨}}成功地观察到了{{c2::光的干涉}}现象。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "o`9!{jqkiT",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1818年，法国科学家{{c1::菲涅尔}}和{{c2::泊松}}计算并实验观察到光的圆板衍射—{{c2::泊松}}亮斑。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "gM{X!sP9Vc",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "爱因斯坦还提出了相对论中的一个重要结论——{{c1::质能}}方程式。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "I}D{B</|+Q",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "公元前468-前376，我国的{{c1::墨翟}}及其弟子在《{{c1::墨经}}》中记载了光的直线传播、影的形成、光的反射、平面镜和球面镜成像等现象，为世界上最早的{{c2::光学}}著作。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "QIK.lvMGCq",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1849年法国物理学家{{c1::斐索}}首先在地面上测出了光速，以后又有许多科学家采用了更精密的方法测定光速，如美国物理学家{{c2::迈克尔逊}}的{{c3::旋转棱镜法}}。（注意其测量方法）",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "lH_*AH;by:",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "关于光的本质：17世纪明确地形成了两种学说：一种是{{c1::牛顿}}主张的微粒说，认为光是光源发出的一种物质微粒；另一种是荷兰物理学家{{c2::惠更斯}}提出的波动说，认为光是在空间传播的某种波。这两种学说都不能解释当时观察到的全部光现象。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "M8YQ$)vvb`",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "物理学晴朗天空上的两朵乌云：①{{c1::迈克逊－莫雷}}实验——{{c2::相对论}}（高速运动世界）, ②{{c3::热辐射实验}}——{{c4::量子论}}（微观世界）；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "t@w$=t.|Kw",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "19世纪和20世纪之交，物理学的三大发现：{{c1::X射线}}的发现，{{c2::电子}}的发现，{{c3::放射性}}的发现。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "pMbNQKhx3d",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1900年，德国物理学家{{c1::普朗克}}解释物体热辐射规律提出能量子假说：物质发射或吸收能量时，能量不是连续的，而是一份一份的，每一份就是一个最小的能量单位，即能量子；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "w.|Rn3/]$m",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "{{c1::激光}}——被誉为20世纪的“世纪之光”；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "iq7uO^`@IP",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1900年，德国物理学家{{c1::普朗克}}为解释物体热辐射规律提出：电磁波的发射和吸收不是连续的，而是一份一份的，把物理学带进了量子世界；受其启发1905年爱因斯坦提出光子说，成功地解释了光电效应规律，因此获得诺贝尔物理奖。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "q:bTxqC<ME",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1922年，美国物理学家{{c1::康普顿}}在研究石墨中的电子对X射线的散射时——{{c1::康普顿}}效应，证实了光的{{c2::粒子性}}。（说明动量守恒定律和能量守恒定律同时适用于微观粒子）",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "NB>iIW;&CR",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1913年，丹麦物理学家{{c1::玻尔}}提出了自己的原子结构假说，成功地解释和预言了氢原子的辐射电磁波谱，为量子力学的发展奠定了基础。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "h:V8]wXV!=",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1924年，法国物理学家{{c1::德布罗意}}大胆预言了实物粒子在一定条件下会表现出波动性；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ggZS4~mM*q",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1927年美、英两国物理学家得到了电子束在金属晶体上的{{c1::衍射}}图案。电子显微镜与光学显微镜相比，{{c1::衍射}}现象影响小很多，大大地提高分辨能力，质子显微镜的分辨本能更高。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "CANI!0MUi+",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1858年，德国科学家{{c1::普里克}}发现了一种奇妙的射线——阴极射线（高速运动的电子流）。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "vUz{)Foe(p",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1906年，英国物理学家{{c1::汤姆生}}发现电子，获得诺贝尔物理学奖。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Kqc/ZY{/9J",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1913年，美国物理学家{{c1::密立根}}通过油滴实验精确测定了元电荷e电荷量，获得诺贝尔奖。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "F|!Hzz6EJh",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1897年，{{c1::汤姆生}}利用阴极射线管发现了电子，说明原子可分，有复杂内部结构，并提出原子的{{c2::枣糕}}模型。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "F]?N9XQs49",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1885年，瑞士的中学数学教师{{c1::巴耳末}}总结了氢原子光谱的波长规律——{{c1::巴耳末系}}。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Cj**d`Ut#y",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1913年，丹麦物理学家{{c1::波尔}}最先得出氢原子能级表达式；",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "rSn=}~*,D]",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1896年，法国物理学家{{c1::贝克勒尔}}发现天然放射现象，说明原子核有复杂的内部结构。天然放射现象：有两种衰变（α、β），三种射线（α、β、γ），其中γ射线是衰变后新核处于激发态，向低能级跃迁时辐射出的。衰变快慢与原子所处的物理和化学状态无关。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "jJDfeuS(-;",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1932年，卢瑟福学生{{c1::查德威克}}于在{{c2::α粒子}}轰击{{c3::铍核}}时发现{{c4::中子}}，获得诺贝尔物理奖。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "q!div4yjVq",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1934年，{{c1::约里奥－居里夫妇}}用{{c2::α粒子}}轰击{{c3::铝箔}}时，发现{{c4::正电子}}和{{c5::人工放射性同位素}}。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "_(g-zo:jO",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1939年12月，德国物理学家{{c1::哈恩}}和助手斯特拉斯曼用中子轰击铀核时，铀核发生裂变。1942年，在费米、西拉德等人领导下，美国建成第一个裂变反应堆（由浓缩铀棒、控制棒、减速剂、水泥防护层等组成）。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "zz|Oa#aD;s",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1952年{{c1::美国}}爆炸了世界上第一颗氢弹（聚变反应、热核反应）。人工控制核聚变的一个可能途径是：利用强激光产生的高压照射小颗粒核燃料。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "c[l)Tev%l(",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1957年10月，{{c1::苏联}}发射第一颗人造地球卫星； 1961年4月，世界第一艘载人宇宙飞船“东方1号”带着{{c1::尤里加加林}}第一次踏入太空。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "LF1G+/l^xR",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1800年，英国物理学家{{c1::赫歇耳}}发现红外线； 1801年，德国物理学家{{c2::里特}}发现紫外线； 1895年，德国物理学家{{c3::伦琴}}发现X射线（{{c3::伦琴}}射线），并为他夫人的手拍下世界上第一张X射线的人体照片。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "eVy+AD/zJs",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1864年，英国物理学家{{c1::麦克斯韦}}预言了电磁波的存在，指出光是一种电磁波； 1887年，{{c2::赫兹}}证实了电磁波的存在，光是一种电磁波",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cA_]^sM^nm",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1905年，{{c1::爱因斯坦}}提出了狭义相对论，有两条基本原理： ①相对性原理——不同的惯性参考系中，一切物理规律都是相同的； ②光速不变原理——不同的惯性参考系中，光在真空中的速度一定是c不变。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ohQPXm;N[Y",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1905年，{{c1::爱因斯坦}}提出了狭义相对论，有两条基本原理： ①相对性原理——不同的惯性参考系中，一切物理规律都是相同的； ②光速不变原理——不同的惯性参考系中，光在真空中的速度一定是c不变。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "j]TY*iN).,",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1909－1911年，英国物理学家{{c1::卢瑟福}}和助手们进行了{{c2::α粒子散射}}实验，并提出了原子的{{c3::核式结构}}模型。由实验结果估计原子核直径数量级为10<sup>{{c4::-15}}</sup>m。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "eTGvWoR/0H",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1896年，在贝克勒尔的建议下，{{c1::玛丽-居里夫妇}}发现了两种放射性更强的新元素——钋（Po）镭（Ra）。&nbsp;",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "cU1aPEl0HK",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "1919年，{{c1::卢瑟福}}用{{c2::α粒子}}轰击{{c3::氮核}}，第一次实现了原子核的{{c4::人工转变}}，发现了{{c5::质子}}，并预言原子核内还有另一种粒子——中子。",
+                "物理学史",
+                "",
+                "",
+                ""
+            ],
+            "flags": 0,
+            "guid": "Ft)k8Mh}If",
+            "note_model_uuid": "08f42d36-375c-11e9-8661-beec426c7dda",
+            "tags": [
+                "物理学史"
+            ]
+        }
+    ]
+}
